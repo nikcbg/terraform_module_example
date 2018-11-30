@@ -2,7 +2,6 @@ provider "aws" {
   region = "us-east-2"
 }
 
-# Create EC2 cluster in AWS with module downloaded from Terraform Registry. 
 module "ec2_cluster" {
   source                 = "terraform-aws-modules/ec2-instance/aws"
   version                = "1.12.0"
